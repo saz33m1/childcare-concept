@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Child Care Landing Concept</title>
+    <link href="styles.css" rel="stylesheet" />
+    <!-- This small JavaScript file (less than 1 KB minified) helps the browser
+    know if the USWDS JavaScript library is loading properly. This prevents
+    component content from “flashing” or “shifting” while the page loads.
+    Reference uswds-init.min.js in the <head> of your page -->
+    <script src="uswds/js/uswds-init.min.js"></script>
+    <!-- XXX: figure out what javascript needs to be included, and include it -->
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    
+    <script type="module" src="https://cdn.maryland.gov/mdwds/latest/components/maryland-statewide-banner.js"></script>
+
+
+    <maryland-statewide-banner>
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.maryland.gov/mdwds/latest/css/mdwds.min.css">
+    <div class="maryland-alert maryland-alert--warning">
+      <div class="maryland-alert__body">
+        <h4 class="maryland-alert__heading">JavaScript Required</h4>
+        <p class="maryland-alert__text">
+          JavaScript is required to use content on this page. Please enable
+          JavaScript in your browser.
+        </p>
+      </div>
+    </div>
+  </noscript>
+</maryland-statewide-banner>
+
+
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="-logo">
+        <em class="usa-logo__text"
+          ><a href="/" title="<Project title>"
+            >Childcare Provider Quick Start</a
+          ></em
+        >
+      </div>
+    </div>
+  </div>
+</header>
+  
+
+
+<!--Main, start-->
+<main class="usa-section" id="main-content">
+  <div class="grid-container">
+    <div class="grid-row grid-gap">
+      <div class="tablet:grid-col-4">
+        <div class="usa-prose">
+          <h1 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+            Sign in
+          </h1>
+        </div>
+        <form class="usa-form" method="post">
+          <label class="usa-label" for="username-or-email">Username or email address</label>
+          <input
+            class="usa-input"
+            id="username-or-email"
+            name="username-or-email"
+            type="text"
+            autocapitalize="off"
+            autocorrect="off"
+            required
+          />
+
+          <label class="usa-label" for="password-sign-in">Password</label>
+          <div class="usa-password-mask">
+            <input
+              class="usa-input"
+              id="password-sign-in"
+              name="password"
+              type="password"
+              required
+            />
+            <button
+              class="usa-show-password"
+              type="button"
+              aria-controls="password-sign-in"
+            >
+              Show password
+            </button>
+          </div>
+          
+          <input class="usa-button" type="submit" value="Sign in" />
+
+          <p><a href="javascript:void(0);">Forgot username?</a></p>
+          <p><a href="javascript:void(0);">Forgot password?</a></p>
+        </form>
+        <div class="usa-prose">
+          <p>
+            Don't have an account?
+            <a href="create-account.html">Create an account</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Main, end-->
+
+
+
+
+
+
+    <div class="usa-identifier">
+      <section
+        class="usa-identifier__section usa-identifier__section--masthead"
+        aria-label="Agency identifier"
+      >
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__logos">
+            <a href="#" class="usa-identifier__logo">
+              <img
+                class="usa-identifier__logo-img"
+                src="https://designsystem.maryland.gov/assets/img/mdds-logo-wings.png"
+                alt="Parent agency logo"
+                role="img"
+              />
+            </a>
+          </div>
+          <section class="usa-identifier__identity" aria-label="Agency description">
+            <p class="usa-identifier__identity-domain">maryland.gov</p>
+            <p class="usa-identifier__identity-disclaimer">
+              <span aria-hidden="true">An </span>official website of the
+              <a href="#"> Parent agency </a>
+            </p>
+          </section>
+        </div>
+      </section>
+      <nav
+        class="usa-identifier__section usa-identifier__section--required-links"
+        aria-label="Important links"
+      >
+        <div class="usa-identifier__container">
+          <ul class="usa-identifier__required-links-list">
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                About Parent agency
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                Accessibility statement
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                FOIA requests
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                No FEAR Act data
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                Office of the Inspector General
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                Performance reports
+              </a>
+            </li>
+            <li class="usa-identifier__required-links-item">
+              <a href="#" class="usa-identifier__required-link usa-link">
+                Privacy policy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <section
+        class="usa-identifier__section usa-identifier__section--usagov"
+        aria-label="Maryland state government information and services"
+      >
+        <div class="usa-identifier__container">
+          <div class="usa-identifier__usagov-description">
+            Looking for Maryland state government information and services?
+          </div>
+          <a href="https://maryland.gov" class="usa-link"> Visit Maryland.gov </a>
+        </div>
+      </section>
+    </div>
+   
+    <script type="module" src="https://cdn.maryland.gov/mdwds/latest/components/maryland-statewide-footer.js"></script>
+    <maryland-statewide-footer></maryland-statewide-footer>
+
+    <script src="uswds/js/uswds.min.js"></script>
+  </body>
+</html>
